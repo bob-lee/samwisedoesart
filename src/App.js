@@ -1,23 +1,29 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+// import { ReactComponent as Logo } from './logo.svg'
+// import logo from './IMG_2040.JPG';
+// import './App.css';
+if (typeof window !== 'undefined') {
+  require('./App.css')
+}
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <div className="cover-image" />
+        {/* <img src={logo} className="cover-image" alt="logo" /> */}
+        {/* <Logo /> */}
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Samwise does art
         </p>
-        <a
+        {/* <a
           className="App-link"
-          href="https://reactjs.org"
+          href="https://joanne-lee.web.app"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
-        </a>
+          Joanne's website
+        </a> */}
       </header>
     </div>
   );

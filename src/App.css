@@ -2,6 +2,13 @@
   text-align: center;
 }
 
+.cover-image {
+  width: 100%;
+  height: calc(100vh);
+  background-image: url("./IMG_2040.JPG");
+  background-size: cover;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;

@@ -19,8 +19,11 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "clean:babel": "rm functions/index.js && rm -rf functions/src",
-    "babel": "node_modules/.bin/babel src -d functions/src && node_modules/.bin/babel index.js -d functions"
+    "clean": "rm functions/index.js && rm -rf functions/src",
+    "babel": "node_modules/.bin/babel src -d functions/src && node_modules/.bin/babel index.js -d functions",
+    "build:ssr": "yarn build && yarn babel && mv build/index.html functions",
+    "prepare": "yarn clean && yarn build:ssr",
+    "deploy": "cd functions && firebase deploy && cd -"
   },
   "eslintConfig": {
     "extends": "react-app"
