@@ -1,5 +1,9 @@
 {
   "name": "samwisedoesart",
+  "author": {
+    "name": "Bob Lee",
+    "email": "bob.bumsuk.lee@gmail.com"
+  },
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -14,7 +18,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "clean:babel": "rm functions/index.js && rm -rf functions/src",
+    "babel": "node_modules/.bin/babel src -d functions/src && node_modules/.bin/babel index.js -d functions"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -30,5 +36,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/plugin-proposal-class-properties": "^7.8.3"
   }
 }
