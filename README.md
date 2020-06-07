@@ -14,9 +14,25 @@ Sam's website, https://samwisedoesart.web.app
 - using css, image needs care on server-side rendering
 - first deployment done
 
+## developement workflow
 
 ```bash
-yarn prepare # clean and build
-yarn deploy # deploy production build
+# you need a github account
+# you need 'VS code' editor installed
+# open bash console
+# you need 'nvm' installed
+# you need 'node' version 10 installed
+# you need 'yarn' installed
+# go to your work folder and clone repository
+git clone https://github.com/bob-lee/samwisedoesart.git
+cd samwisedoesart
+# install dependencies
+yarn
+# start development
+yarn start
+# clean and build
+yarn prepare
+# deploy production build
+yarn deploy
 ```
 
